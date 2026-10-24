@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>FitTrack</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <meta name="application-name" content="FitTrack" />
+  <meta name="theme-color" content="#080c12" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="FitTrack" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <style>
+    html,body,#root{height:100%}body{margin:0;overflow:hidden;background:#080c12}#root{display:flex;flex:1}
+    #fittrack-startup{position:fixed;z-index:2147483647;top:env(safe-area-inset-top,0);left:0;right:0;max-height:80vh;overflow:auto;background:#101c2c;color:#fff;padding:16px;font:14px/1.5 system-ui;border-bottom:2px solid #1683f8}
+    #fittrack-startup summary{cursor:pointer;font-weight:bold}#fittrack-startup pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.5 monospace}#fittrack-startup button{padding:10px;margin:4px}
+  </style>
+<link rel="icon" href="/favicon.ico"/><link rel="preload" href="/_expo/static/css/animated-icon.module-eec65aa47fc61787231f45ae14d688f6.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/animated-icon.module-eec65aa47fc61787231f45ae14d688f6.css"><link rel="preload" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css"></head>
+<body>
+  <details id="fittrack-startup" open><summary id="fittrack-startup-status">FitTrack is starting…</summary>
+    <p>Startup diagnostics. Logs startup stages and errors. Review before sharing. Do not clear website data.</p>
+    <button id="fittrack-copy" type="button">Copy report</button><span id="fittrack-copy-status"></span>
+    <pre id="fittrack-startup-report">HTML loaded. Waiting for diagnostic script…</pre>
+    <noscript>JavaScript is disabled. Enable it to start FitTrack.</noscript>
+  </details>
+  <!-- Runs before the Expo bundle, including when that bundle cannot parse or load. -->
+  <script src="/startup-diagnostics.js"></script>
+  <div id="root"></div>
+<script src="/_expo/static/js/web/entry-0a423468b99632c854cfe82d7dc4bc37.js" defer></script>
+</body>
+</html>
